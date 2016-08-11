@@ -19,7 +19,7 @@ public class Client {
              */
             Decorator decorator1 = new MonthPrizeDecorator(component);
             Decorator decorator2 = new SumPrizeDecorator(decorator1);
-            Decorator decorator3 = new GroupPrizeDecorator(decorator1);
+            Decorator decorator3 = new GroupPrizeDecorator(decorator2);
 
 
             //这里只需要用最后组合好的对象调用业务方法即可
