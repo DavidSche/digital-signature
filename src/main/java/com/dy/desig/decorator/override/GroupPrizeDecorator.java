@@ -14,8 +14,11 @@ public class GroupPrizeDecorator extends Decorator {
 
     @Override
     public double calcPrize(String user,int month) {
-        double money = super.calcPrize(user,month);
 
+        double money = super.calcPrize(user,month);
+        if (!isManager(user)){
+            return money;
+        }
         double totalPrize = 0.00;
 
         //团队奖金 = 团队总业务额 * 1%
@@ -24,7 +27,11 @@ public class GroupPrizeDecorator extends Decorator {
             prize += amount;
         }
         prize = prize*0.01;
-        System.out.println(user + " " +month+"月份应得奖金:"+(prize+money)+"==>>");
+        System.out.println(user + " " +month+"月份团队奖金:"+(prize)+"==>>");
         return  money + prize;
+    }
+
+    private boolean isManager(String user) {
+        return TempDB.saleManager.get("经理").equals(user);
     }
 }

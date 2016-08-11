@@ -58,6 +58,9 @@ public class Prize {
      * @return
      */
     private double groupPrize(String user, int month) {
+        if (!isManager(user)){
+            return 0;
+        }
 
         //团队奖金 = 团队总业务额 * 1%
         double prize = 0.00;
@@ -74,20 +77,15 @@ public class Prize {
      * @param month
      * @return
      */
-    public void calcPrize(int month) {
-        for (String user:TempDB.mapMonthSaleMoney.keySet()){
+    public void calcPrize(String user,int month) {
 
             double monthPrize = this.monthPrize(user, month);
 
             double sumPrize = this.sumPrize(user, month);
 
-            double groupPrize = 0.00;
-            if (isManager(user)){
-                groupPrize = groupPrize(user, month);
-            }
+            double groupPrize =groupPrize(user, month);
 
             System.out.println(user + " " +month+"月份应得奖金:"+(monthPrize+sumPrize+groupPrize)+"==>>");
-        }
 
     }
 }

@@ -7,6 +7,8 @@ package com.dy.desig.decorator;
 public class Client {
     public static void main(String[] args) {
         Prize prize = new Prize();
-        prize.calcPrize(3);
+        for (String user:TempDB.mapMonthSaleMoney.keySet()){
+            prize.calcPrize(user,3);
+        }
     }
 }

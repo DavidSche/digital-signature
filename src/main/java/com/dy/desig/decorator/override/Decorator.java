@@ -19,6 +19,7 @@ public abstract class Decorator extends Component {
 
     @Override
     public double calcPrize(String user,int month) {
-        return component.calcPrize(user,month);//转调组件对象的方法
+        double prize =  component.calcPrize(user,month);//转调组件对象的方法
+        return prize;
     }
 }
