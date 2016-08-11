@@ -1,4 +1,4 @@
-package com.dy.observer;
+package com.dy.desig.observer;
 
 import java.util.ArrayList;
 import java.util.List;

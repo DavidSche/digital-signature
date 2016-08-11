@@ -1,4 +1,4 @@
-package com.dy.observer;
+package com.dy.desig.observer;
 
 /**
  * 目标对象的继承者

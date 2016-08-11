@@ -1,4 +1,4 @@
-package com.dy.observer;
+package com.dy.desig.observer;
 
 /**
  * 观察者接口

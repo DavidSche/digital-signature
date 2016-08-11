@@ -1,4 +1,4 @@
-package com.dy.observer.java;
+package com.dy.desig.observer.jdk;
 
 
 import java.util.Observable;

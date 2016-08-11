@@ -1,4 +1,5 @@
-package com.dy.observer;
+package com.dy.desig.observer;
+
 
 /**
  * 读者，报纸订阅者

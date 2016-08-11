@@ -84,7 +84,6 @@ public class Prize {
             double groupPrize = 0.00;
             if (isManager(user)){
                 groupPrize = groupPrize(user, month);
-
             }
 
             System.out.println(user + " " +month+"月份应得奖金:"+(monthPrize+sumPrize+groupPrize)+"==>>");

@@ -7,6 +7,6 @@ package com.dy.desig.decorator;
 public class Client {
     public static void main(String[] args) {
         Prize prize = new Prize();
-        prize.calcPrize(2);
+        prize.calcPrize(3);
     }
 }

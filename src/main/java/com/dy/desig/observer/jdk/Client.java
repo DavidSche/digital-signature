@@ -1,4 +1,4 @@
-package com.dy.observer.java;
+package com.dy.desig.observer.jdk;
 
 /**
  * Created by Administrator on 2016/4/22.

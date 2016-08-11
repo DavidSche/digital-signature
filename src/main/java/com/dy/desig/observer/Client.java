@@ -1,4 +1,4 @@
-package com.dy.observer;
+package com.dy.desig.observer;
 
 /**
  * Created by Administrator on 2016/4/22.
