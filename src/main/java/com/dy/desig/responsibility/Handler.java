@@ -17,6 +17,11 @@ public abstract class Handler {
     }
 
 
-
+    /**
+     * 处理申请
+     * @param user
+     * @param fee
+     * @return
+     */
     public abstract String requestToFee(String user,double fee);
 }
